@@ -54,7 +54,3 @@
 - Browser (Chrome/Firefox/Edge)  
 
 ---
-
-## 🏗️ System Design  
-
-### 📌 Architecture Overview
