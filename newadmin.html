@@ -1,0 +1,57 @@
+<?php
+if(isset($_POST["reg"]))
+{
+}
+
+<html>
+<style>
+input[type=text],input[type=password]{
+align:center;
+width:200%;
+padding:15px 5px;
+margin:10px;
+}
+input[type=submit]{
+background-color:Mediumseagreen;
+padding:10px 15px;
+margin:1px 0px;
+width:15%;
+}
+table{
+color:white;
+font-size:25px;
+font-family:century gothic;
+}
+</style>
+
+<body style="background-color:black";>
+
+<Form action="newadmin.php" method="POST">
+<center>
+<h1 style="color:white;"><b>Adding New Admin</b></h1>
+</center>
+<table align="center">
+<tr>
+<th>USERNAME</th>
+<th><input type="text" name="user" placeholder="Enter The Username" required></th>
+</tr>
+<br>
+<tr>
+<th>PASSWORD</th>
+<th><input type="password" name="pwd" placeholder="Enter The New Password" required></th>
+</tr>
+<tr>
+<th>CONFIRM PASSWORD</th>
+<th><input type="password" name="pwdd" placeholder="Confirm Password" required></th><?php if($n != $p){echo "Please enter crct password";}?>
+</tr>
+<tr>
+<th>PHONE NO</th>
+<th><input type="text" name="pwddd" placeholder="Enter The Phone Number" required maxlength=10></th>
+</tr>
+</table>
+<br>
+<center>
+<input type="submit" name="but" value="Add"></form>
+</center>
+</body>
+</html>
